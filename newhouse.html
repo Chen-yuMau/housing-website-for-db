@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<link rel="stylesheet" href="index.css">
+		<title>New House</title>
+	</head>
+	
+	<body>
+	<br/><br/><br/>
+	<h1><strong>Please Fill In The Following To Register</strong></h1>
+		<form action="housemanagement.php" method="post" id="cancel"></form>
+ 		<form action="newhouse.php" method="post" id="new">
+			<br/><br/>
+			<input name="name" placeholder="name" type="text" required />
+			<br/>
+			<input name="price" placeholder="price" type="number" required />
+			<br/>
+			<input name="location" placeholder="location" type="text" required />
+			<br/>
+			<p>Information</p>
+			<table align="center">
+				<tbody>
+					<tr>
+						<td><label class="container">laundry facilities<input type="checkbox" name="check_list[]" value="laundry facilities"><span class="checkmark"></span></label></td>
+						<td><label class="container">wifi<input type="checkbox" name="check_list[]" value="wifi"><span class="checkmark"></span></label></td>
+						<td><label class="container">lockers<input type="checkbox" name="check_list[]" value="lockers"><span class="checkmark"></span></label></td>
+						<td><label class="container">kitchen<input type="checkbox" name="check_list[]" value="kitchen"><span class="checkmark"></span></label></td>
+						<td><label class="container">elevator<input type="checkbox" name="check_list[]" value="elevator"><span class="checkmark"></span></label></td>
+					</tr>
+					<tr>
+						<td><label class="container">no smoking<input type="checkbox" name="check_list[]" value="no smoking"><span class="checkmark"></span></label></td>
+						<td><label class="container">television<input type="checkbox" name="check_list[]" value="television"><span class="checkmark"></span></label></td>
+						<td><label class="container">breakfast<input type="checkbox" name="check_list[]" value="breakfast"><span class="checkmark"></span></label></td>
+						<td><label class="container">toiletries provided<input type="checkbox" name="check_list[]" value="toiletries provided"><span class="checkmark"></span></label></td>
+						<td><label class="container">shuttle service<input type="checkbox" name="check_list[]" value="shuttle service"><span class="checkmark"></span></label></td>
+					</tr>
+		</form>
+					<tr>
+						<td></td>
+						<td><button form="new" name="create" class="submit" type="submit" value="1" >Add New House</button></td>
+						<td></td>
+						<td><button form="cancel" name="cancel" class="submit" type="submit" value="0" >Cancel</button></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+	</body>
+</html>
+<!--laundry facilities	wifi	lockers	kitchen	elevator	no smoking	television	breakfast	toiletries provided	shuttle service-->
